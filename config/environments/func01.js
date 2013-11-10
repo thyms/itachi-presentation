@@ -10,8 +10,6 @@ module.exports = function (compound) {
     app.use(require('express').errorHandler());
     app.settings.quiet = true;
 
-    var config = config[environment];
-    console.log('config: ', config);
     app.set('config', config);
   });
 };
