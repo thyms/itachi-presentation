@@ -2,6 +2,6 @@ script: make test-app-ci
 deploy:
   provider: heroku
   api_key:
-    secure: f2DnRhfiQyAQzg5MTC6ZXhGfDFX4DWRZonpdSk3Fb/4C0Qi3tqJsJBm2D1KgZQiwFl55kPFZ2QBrnXgtr4tJDYofv4v2q64sSpwxbZf9FGlno5X9LGFGffIJ3vM3B4IvSXphCezMZk0kPiAnxUA7TGmk/Ss2fH1frtA/6yfXgQs=
+    secure: I9nCr/ZRePFKIOuW2PHRd9N/WOoT7SyRqcHwJeZdyMh0PE79tSbOw0VYuiJMhcAyRR2vsVyOtK2AFwRR2gNoQb5s0Wko5A0+CUXjhu/DGosU7RLcKYn+4UbtLdYlAV2RURTk47nVUSYu7vBTKtAfCbAVdGuHatXSX7voxjMFKWQ=
   app:
     develop: itachi-presentation-func01
