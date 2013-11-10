@@ -1,3 +1,3 @@
-Presentation layer project for project Eva.
+Presentation layer project for project itachi.
 
 TODO: [DK] fill in this...

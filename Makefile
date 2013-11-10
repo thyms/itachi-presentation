@@ -12,23 +12,23 @@ test-app-ci:
 
 setup-app:
 	npm install
-	git remote add functional01 git@heroku.com:eva-presentation-func01.git
-	git remote add qa01         git@heroku.com:eva-presentation-qa01.git
-	git remote add demo01       git@heroku.com:eva-presentation-demo01.git
-	git remote add stage01      git@heroku.com:eva-presentation-stage01.git
-	git remote add prod01       git@heroku.com:eva-presentation-prod01.git
+	git remote add functional01 git@heroku.com:itachi-presentation-func01.git
+	git remote add qa01         git@heroku.com:itachi-presentation-qa01.git
+	git remote add demo01       git@heroku.com:itachi-presentation-demo01.git
+	git remote add stage01      git@heroku.com:itachi-presentation-stage01.git
+	git remote add prod01       git@heroku.com:itachi-presentation-prod01.git
 
 setup-heroku:
-	heroku apps:create --remote functional01 --app eva-presentation-func01
-	heroku apps:create --remote qa01         --app eva-presentation-qa01
-	heroku apps:create --remote demo01       --app eva-presentation-demo01
-	heroku apps:create --remote stage01      --app eva-presentation-stage01
-	heroku apps:create --remote prod01       --app eva-presentation-prod01
-	heroku config:add NODE_ENV=functional01  --app eva-presentation-func01
-	heroku config:add NODE_ENV=qa01          --app eva-presentation-qa01
-	heroku config:add NODE_ENV=demo01        --app eva-presentation-demo01
-	heroku config:add NODE_ENV=stage01       --app eva-presentation-stage01
-	heroku config:add NODE_ENV=prod01        --app eva-presentation-prod01
+	heroku apps:create --remote functional01 --app itachi-presentation-func01
+	heroku apps:create --remote qa01         --app itachi-presentation-qa01
+	heroku apps:create --remote demo01       --app itachi-presentation-demo01
+	heroku apps:create --remote stage01      --app itachi-presentation-stage01
+	heroku apps:create --remote prod01       --app itachi-presentation-prod01
+	heroku config:add NODE_ENV=functional01  --app itachi-presentation-func01
+	heroku config:add NODE_ENV=qa01          --app itachi-presentation-qa01
+	heroku config:add NODE_ENV=demo01        --app itachi-presentation-demo01
+	heroku config:add NODE_ENV=stage01       --app itachi-presentation-stage01
+	heroku config:add NODE_ENV=prod01        --app itachi-presentation-prod01
 
 .PHONY: no_targets__ list
 no_targets__:

@@ -1,4 +1,4 @@
 action('index', function(){
   layout('admin');
-  render({title: 'Eva Presentation Admin'});
+  render({title: 'itachi presentation admin'});
 });

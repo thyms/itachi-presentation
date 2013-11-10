@@ -1,3 +1,3 @@
 action('show', function(){
-  render({title: 'Welcome to Eva Presentation'});
+  render({title: 'Welcome to itachi presentation'});
 });
