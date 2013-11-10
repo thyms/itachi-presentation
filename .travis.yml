@@ -4,4 +4,4 @@ deploy:
   api_key:
     secure: f2DnRhfiQyAQzg5MTC6ZXhGfDFX4DWRZonpdSk3Fb/4C0Qi3tqJsJBm2D1KgZQiwFl55kPFZ2QBrnXgtr4tJDYofv4v2q64sSpwxbZf9FGlno5X9LGFGffIJ3vM3B4IvSXphCezMZk0kPiAnxUA7TGmk/Ss2fH1frtA/6yfXgQs=
   app:
-    develop: itachi-presentation-functional01
+    develop: itachi-presentation-func01
