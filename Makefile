@@ -12,11 +12,11 @@ test-app-ci:
 
 setup-app:
 	npm install
-	git remote add functional01 git@heroku.com:itachi-presentation-func01.git
-	git remote add qa01         git@heroku.com:itachi-presentation-qa01.git
-	git remote add demo01       git@heroku.com:itachi-presentation-demo01.git
-	git remote add stage01      git@heroku.com:itachi-presentation-stage01.git
-	git remote add prod01       git@heroku.com:itachi-presentation-prod01.git
+	git remote add func01  git@heroku.com:itachi-presentation-func01.git
+	git remote add qa01    git@heroku.com:itachi-presentation-qa01.git
+	git remote add demo01  git@heroku.com:itachi-presentation-demo01.git
+	git remote add stage01 git@heroku.com:itachi-presentation-stage01.git
+	git remote add prod01  git@heroku.com:itachi-presentation-prod01.git
 
 .PHONY: no_targets__ list
 no_targets__:
