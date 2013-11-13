@@ -18,6 +18,13 @@ setup-app:
 	git remote add stage01 git@heroku.com:itachi-presentation-stage01.git
 	git remote add prod01  git@heroku.com:itachi-presentation-prod01.git
 
+git-pre-commit:
+	@current_branch=$$(git rev-parse --abbrev-ref HEAD) && \
+	if [ $$current_branch = 'develop' ]; then \
+		make test-app && \
+		heroku config:add COMMIT_HASH=$$(git rev-parse HEAD) --app itachi-presentation-func01; \
+	fi
+
 deploy-app:
 	@commit_hash=$$(git rev-parse HEAD) && \
 	if [ $$ENV = 'prod01' ]; then \
