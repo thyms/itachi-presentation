@@ -18,6 +18,21 @@ setup-app:
 	git remote add stage01 git@heroku.com:itachi-presentation-stage01.git
 	git remote add prod01  git@heroku.com:itachi-presentation-prod01.git
 
+deploy-app:
+	@commit_hash=$$(git rev-parse HEAD) && \
+	if [ $$ENV = 'prod01' ]; then \
+		while [ -z "$$COMMIT_HASH" ]; do \
+			read -r -p "Enter commit hash: " COMMIT_HASH; \
+		done && \
+		if [ $$COMMIT_HASH = $$commit_hash ]; then \
+			git push $$ENV develop:master && \
+			heroku config:add COMMIT_HASH=$$commit_hash --app itachi-presentation-$$ENV; \
+		fi \
+	else \
+		git push $$ENV develop:master && \
+		heroku config:add COMMIT_HASH=$$commit_hash --app itachi-presentation-$$ENV; \
+	fi
+
 .PHONY: no_targets__ list
 no_targets__:
 list:
