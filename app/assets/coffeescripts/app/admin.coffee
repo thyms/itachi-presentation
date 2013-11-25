@@ -1,12 +1,12 @@
 app = angular.module('admin-app', ['ngResource'])
 app.config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
   $routeProvider
-    .when("/admin/status/:section",
+    .when "/admin/status/:section",
       templateUrl: "/partials/admin_status"
-      controller: "StatusController")
-    .when("/admin/status",
+      controller: "StatusController"
+    .when "/admin/status",
       templateUrl: "/partials/admin_status"
-      controller: "StatusController")
+      controller: "StatusController"
     .otherwise redirecTo: "/admin/status"
 
   $locationProvider.html5Mode(true)

@@ -9,7 +9,7 @@ html(ng-app='admin-app')
     .navbar.navbar-inverse
       .container
         .navbar-header
-          a.navbar-brand(href='#') itachi presentation
+          a.navbar-brand(href='/', target='_self') itachi presentation
 
     .container
       - var flash = request.flash('info').pop(); if (flash) {
