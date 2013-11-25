@@ -20,4 +20,4 @@ controllers =
   StatusController: ($scope, $routeParams, Status) ->
     $scope.params = Status.get(section: $routeParams.section)
 
-app.controller("StatusController", controllers.StatusController)
+app.controller "StatusController", ['$scope', '$routeParams', 'Status', controllers.StatusController]
